@@ -18,17 +18,17 @@ open an issue and I'll do my best to better document the build process.
 
 `token` and `PayeezyApiKey` are the only *required* props,
 everything else is optional as per the Payeezy docs. See [
-Docs](https://Payeezy.com/docs/#integration-custom). All props
+Docs](https://developer.payeezy.com/apis/payeezy-api). All props
 go through simple validation and are passed to Payeezy , they're
 also documented in `payeezy_us_v5.1.js`.
 
 ```jsx
 import React from 'react'
-import Payeezy from 'react-Payeezy-';
+import Payeezy from 'react-payeezy';
 
 export default class TakeMoney extends React.Component {
   onToken = (token) => {
-    fetch('/save-Payeezy-token', {
+    fetch('/save-payeezy-token', {
       method: 'POST',
       body: JSON.stringify(token),
     }).then(response => {
