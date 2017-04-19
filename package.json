@@ -1,6 +1,6 @@
 {
   "name": "react-payeezy",
-  "version": "0.0.2-1",
+  "version": "0.0.2-2",
   "description": "Easily inject .js as a react component. Will load the script on demand and supports all the options from Payeezy docs.",
   "main": "./dist/main.js",
   "scripts": {
