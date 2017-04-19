@@ -98,6 +98,10 @@
   ],
   "author": "Thomas Vincent <thomasvincent@gmail.com> (http://github.com/thomasvincent)",
   "license": "MIT",
+  "peerDependencies": {
+    "react": ">=0.14.0",
+    "react-dom": ">=0.14.0"
+  },
   "bugs": {
     "url": "https://github.com/thomasvincent/react-payeezy/issues"
   },
