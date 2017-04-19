@@ -74,14 +74,9 @@ This will give you a default *Payeezy-style* button which looks like this:
   // fill out both. Addresses are sent as a second parameter in the token callback.
   shippingAddress
   billingAddress={false}
-  // Note: enabling both zipCode checks and billing or shipping address will
-  // cause zipCheck to be pulled from billing address (set to shipping if none provided).
-  zipCode={false}
-  alipay
-  bitcoin
   allowRememberMe
   token={this.onToken}
-  // Note: `reconfigureOnUpdate` should be set to true IFF, for some reason
+  // Note: `reconfigureOnUpdate` should be set to true if, for some reason
   // you are using multiple Payeezy keys
   reconfigureOnUpdate={false}
   // Note: you can change the event to `onTouchTap`, `onClick`, `onTouchStart`
