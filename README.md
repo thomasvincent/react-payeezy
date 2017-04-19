@@ -3,7 +3,7 @@
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/thomasvincent/react-payeezy)
 [![Build Status](https://travis-ci.org/thomasvincent/react-payeezy.svg?branch=master)](https://travis-ci.org/thomasvincent/react-payeezy)
 # React Payeezy Component
-Payeezy original API is very thorough and this makes it more react. The component is based on a implimentation for Stripe form Adam Zmenak at https://github.com/azmenak/react-stripe-checkout . 
+Payeezy original API is very thorough and this makes it more react. 
 
 ### Installation
 
@@ -89,6 +89,8 @@ This will give you a default *Payeezy-style* button which looks like this:
   </button>
 </Payeezy>
 ```
+### Credit
+The component is based on a implimentation for Stripe form Adam Zmenak at https://github.com/azmenak/react-stripe-checkout . 
 
 ### Other info
 Pull requests welcome
