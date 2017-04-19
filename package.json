@@ -5,9 +5,9 @@
   "main": "./dist/main.js",
   "scripts": {
     "test": "mocha --require babel-register --require .test-setup.js -R spec ./spec.js",
-    "cover": "nyc -x './spec.js' -n 'react-Payeezy.js' -r text -r html -r lcov npm test",
-    "watch": "./node_modules/.bin/babel react-Payeezy.js --out-file ./dist/main.js --source-maps inline --watch",
-    "build": "./node_modules/.bin/babel react-Payeezy.js --out-file ./dist/main.js",
+    "cover": "nyc -x './spec.js' -n 'Payeezy-react.js' -r text -r html -r lcov npm test",
+    "watch": "./node_modules/.bin/babel Payeezy-react.js --out-file ./dist/main.js --source-maps inline --watch",
+    "build": "./node_modules/.bin/babel Payeezy-react.js --out-file ./dist/main.js",
     "version": "npm run build"
   },
   "babel": {
@@ -103,14 +103,14 @@
   },
   "homepage": "https://github.com/thomasvincent/react-payeezy",
   "devDependencies": {
-    "babel-cli": "^6.11.4",
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.11.4",
     "babel-eslint": "^6.1.2",
+    "babel-plugin-transform-object-assign": "^6.8.0",
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.11.1",
     "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-0": "^6.5.0",
-    "babel-plugin-transform-object-assign": "^6.8.0",
     "babel-register": "^6.11.6",
     "enzyme": "^2.4.1",
     "eslint": "^2.10.1",
