@@ -83,7 +83,7 @@ export default class ReactPayeezy extends React.Component {
     PayeezyTimestamp: React.PropTypes.string.isRequired,
 
     //This is used to identify the merchant
-    PayeezytTimestamp: React.PropTypes.string.isRequired,
+    Payeezyt: React.PropTypes.string.isRequired,
 
 
     // The callback to invoke when the  process is complete.
@@ -291,6 +291,10 @@ export default class ReactPayeezy extends React.Component {
   }
 
   getConfig = () => [
+    'PayeezyApiKey',
+    'PayeezyAuthorization',
+    'PayeezyNonce',
+    'PayeezyTimestamp',
     'token',
     'image',
     'name',
@@ -304,9 +308,6 @@ export default class ReactPayeezy extends React.Component {
     'billingAddress',
     'email',
     'allowRememberMe',
-    'bitcoin',
-    'alipay',
-    'alipayReusable',
   ].reduce((config, key) => Object.assign({}, config, this.props.hasOwnProperty(key) && {
     [key]: this.props[key],
   }), {
