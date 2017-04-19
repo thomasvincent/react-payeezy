@@ -1,7 +1,7 @@
-[![npm version](https://badge.fury.io/js/react-Payeezy-.svg)](http://badge.fury.io/js/react-payeezy)
-[![Dependencies Status](https://david-dm.org/azmenak/react-Payeezy-.svg)](https://david-dm.org/react-payeezy)
+[![npm version](https://badge.fury.io/js/react-payeezy.svg)](http://badge.fury.io/js/react-payeezy)
+[![Dependencies Status](https://david-dm.org/thomasvincent/react-Payeezy.svg)](https://david-dm.org/react-payeezy)
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/thomasvincent/react-payeezy)
-
+[![Build Status](https://travis-ci.org/thomasvincent/react-payeezy.svg?branch=master)](https://travis-ci.org/thomasvincent/react-payeezy)
 # React Payeezy Component
 Payeezy original API is very thorough and this makes it more react. The component is based on a implimentation for Stripe form Adam Zmenak at https://github.com/azmenak/react-stripe-checkout . 
 
