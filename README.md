@@ -1,5 +1,5 @@
 [![npm version](https://badge.fury.io/js/react-payeezy.svg)](http://badge.fury.io/js/react-payeezy)
-[![Dependencies Status](https://david-dm.org/thomasvincent/react-Payeezy.svg)](https://david-dm.org/react-payeezy)
+[![dependencies Status](https://david-dm.org/thomasvincent/react-Payeezy/status.svg)](https://david-dm.org/thomasvincent/react-Payeezy)
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/thomasvincent/react-payeezy)
 [![Build Status](https://travis-ci.org/thomasvincent/react-payeezy.svg?branch=master)](https://travis-ci.org/thomasvincent/react-payeezy)
 # React Payeezy Component
