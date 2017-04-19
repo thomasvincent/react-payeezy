@@ -1,13 +1,13 @@
 {
   "name": "react-payeezy",
-  "version": "0.0.2-3",
+  "version": "0.0.2-4",
   "description": "Easily inject .js as a react component. Will load the script on demand and supports all the options from Payeezy docs.",
   "main": "./dist/main.js",
   "scripts": {
     "test": "mocha --require babel-register --require .test-setup.js -R spec ./spec.js",
-    "cover": "nyc -x './spec.js' -n 'payeezy_us_v5.1.js' -r text -r html -r lcov npm test",
-    "watch": "./node_modules/.bin/babel payeezy_us_v5.1.js --out-file ./dist/main.js --source-maps inline --watch",
-    "build": "./node_modules/.bin/babel payeezy_us_v5.1.js --out-file ./dist/main.js",
+    "cover": "nyc -x './spec.js' -n 'react-Payeezy.js' -r text -r html -r lcov npm test",
+    "watch": "./node_modules/.bin/babel react-Payeezy.js --out-file ./dist/main.js --source-maps inline --watch",
+    "build": "./node_modules/.bin/babel react-Payeezy.js --out-file ./dist/main.js",
     "version": "npm run build"
   },
   "babel": {
