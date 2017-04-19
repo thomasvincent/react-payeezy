@@ -8,11 +8,11 @@ const noop = () => {}
 
 const props = {
   PayeezyApiKey: 'foo',
-  PayeezyApiKey: 'foo'
-  PayeezyAuthorization: 'foo'
-  PayeezynNonce: 'foo'
-  PayeezyTimestamp: 'foo'
-  PayeezytTimestamp: 'foo'
+  PayeezyApiKey: 'foo',
+  PayeezyAuthorization: 'foo',
+  PayeezynNonce: 'foo',
+  PayeezyTimestamp: 'foo',
+  PayeezytTimestamp: 'foo',
   token: noop,
   name: 'foo',
   description: 'foo',
