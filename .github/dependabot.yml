@@ -1,0 +1,75 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    allow:
+      - dependency-type: "direct"
+      - dependency-type: "dev"
+      - dependency-type: "optional"
+    ignore:
+      - "react-payeezy" # ignore updates for this package
+    reviewers:
+      - "thomasvincent"
+    assignees:
+      - "thomasvincent"
+    labels:
+      - "dependencies"
+    package-ecosystem-options:
+      "npm":
+        update-notifier: false
+    automerged:
+      # Update dependencies that are not breaking and only have minor or patch changes
+      # Automatically create a pull request and merge it if the branch is up-to-date with its parent
+      - match:
+          dependency-type: "direct"
+          update-type: "semver:patch"
+        automerge: true
+        commit-message: "chore(deps): update {{ dependency.name }} to {{ dependency.version }}"
+        branch-creation:
+          branch-name: "dependabot/npm/{{{ normalized_dependency_name }}}-{{#if branch_suffix}}{{{ branch_suffix }}}-{{/if}}{{#if pr_number}}PR-{{ pr_number }}{{/if}}"
+          prefix: ""
+        pr-title: "chore(deps): update {{ dependency.name }} to {{ dependency.version }}"
+        pr-body: "Updates {{ dependency.name }} to {{ dependency.version }}."
+        labels:
+          - "dependencies"
+        reviewers:
+          - "thomasvincent"
+        assignees:
+          - "thomasvincent"
+      # Same as previous, but allow minor updates
+      - match:
+          dependency-type: "direct"
+          update-type: "semver:minor"
+        automerge: true
+        commit-message: "chore(deps): update {{ dependency.name }} to {{ dependency.version }}"
+        branch-creation:
+          branch-name: "dependabot/npm/{{{ normalized_dependency_name }}}-{{#if branch_suffix}}{{{ branch_suffix }}}-{{/if}}{{#if pr_number}}PR-{{ pr_number }}{{/if}}"
+          prefix: ""
+        pr-title: "chore(deps): update {{ dependency.name }} to {{ dependency.version }}"
+        pr-body: "Updates {{ dependency.name }} to {{ dependency.version }}."
+        labels:
+          - "dependencies"
+        reviewers:
+          - "thomasvincent"
+        assignees:
+          - "thomasvincent"
+      # Update GitHub Actions
+      - match:
+          dependency-name: "github-actions"
+          directory: "/"
+        automerge: true
+        commit-message: "chore(deps): update GitHub Actions to {{ dependency.version }}"
+        branch-creation:
+          branch-name: "dependabot/github_actions/{{{ normalized_dependency_name }}}-{{#if branch_suffix}}{{{ branch_suffix }}}-{{/if}}{{#if pr_number}}PR-{{ pr_number }}{{/if}}"
+          prefix: ""
+        pr-title: "chore(deps): update GitHub Actions to {{ dependency.version }}"
+        pr-body: "Updates GitHub Actions to {{ dependency.version }}."
+        labels:
+          - "dependencies"
+        reviewers:
+          - "thomasvincent"
+        assignees:
+          - "thomasvincent"
